@@ -1,9 +1,9 @@
 /* Cache semua berkas supaya aplikasi bisa dipakai tanpa internet.
    Naikkan VERSI setiap kali isi aplikasi diperbarui. */
-const VERSI = 'asas4-1';
+const VERSI = 'asas4-2';
 const BERKAS = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png',
-  'data/_util.js', 'data/akidah.js', 'data/quran.js', 'data/fikih.js', 'data/ski.js', 'data/bindo.js',
+  'data/util.js', 'data/akidah.js', 'data/quran.js', 'data/fikih.js', 'data/ski.js', 'data/bindo.js',
   'data/sunda.js', 'data/inggris.js', 'data/mtk.js', 'data/ipas.js', 'data/pancasila.js', 'data/senbud.js'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSI).then(c => c.addAll(BERKAS)).then(() => self.skipWaiting()));

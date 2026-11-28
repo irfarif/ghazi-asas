@@ -167,6 +167,7 @@ function halBeranda() {
       ${hitungMundur()}
     </section>
     ${ujSimpan ? `<div class="card row"><div class="t" style="flex:1"><b>Simulasi ${esc(M(ujSimpan.mid).nama)} belum selesai.</b><div class="muted small">Lanjutkan sebelum waktunya habis.</div></div><a class="btn acc" href="#/ujian/${ujSimpan.mid}">Lanjutkan</a></div>` : ''}
+    ${MAPEL.length ? '' : `<div class="card hasil bad"><h4>Data soal belum termuat</h4>Sambungkan tablet ke internet, lalu tutup dan buka lagi aplikasinya.</div>`}
     <div class="grid">${MAPEL.map(m => {
       const a = akurasi(m.id), nt = nilaiTerbaik(m.id);
       return `<a class="mapel" style="--c:${m.warna};text-decoration:none;color:inherit" href="#/mapel/${m.id}">

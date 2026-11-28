@@ -10,5 +10,5 @@ nilai & riwayat, serta bintang dan lencana. Bisa dipakai tanpa internet setelah 
 3. Setelah itu aplikasi bisa dibuka dari ikon di layar utama, juga tanpa internet.
 
 ## Menambah atau mengubah soal
-Bank soal ada di folder `data/` (satu berkas per mata pelajaran). Formatnya dijelaskan di `data/_util.js`.
+Bank soal ada di folder `data/` (satu berkas per mata pelajaran). Formatnya dijelaskan di `data/util.js`.
 Setelah mengubah isi, naikkan `VERSI` di `sw.js` agar tablet mengambil versi terbaru.
